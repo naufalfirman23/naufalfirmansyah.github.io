@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Project Detail</title>
+<style>
+  /* Reset and global */
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f4f7ff;
+    color: #333;
+    line-height: 1.6;
+  }
+  a {
+    color: #4054b2;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  a:hover {
+    color: #243665;
+  }
+  .container {
+    max-width: 900px;
+    margin: 3rem auto 4rem;
+    background: white;
+    padding: 2.5rem 2rem 3rem;
+    border-radius: 14px;
+    box-shadow: 0 16px 32px rgba(0,0,0,0.1);
+  }
+  header {
+    background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+    color: white;
+    padding: 2rem 1rem 2rem 2rem;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+  }
+  header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+    letter-spacing: 1.5px;
+  }
+  .back-link {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 1.3rem;
+    font-weight: 600;
+    background-color: #4054b2;
+    color: white;
+    border-radius: 30px;
+    box-shadow: 0 6px 16px rgba(64, 84, 178, 0.35);
+    transition: background-color 0.3s ease;
+  }
+  .back-link:hover {
+    background-color: #2b3475;
+  }
+    .horizontal-image-list {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+  .horizontal-image-list::-webkit-scrollbar {
+    height: 8px;
+  }
+  .horizontal-image-list::-webkit-scrollbar-thumb {
+    background-color: #4054b2;
+    border-radius: 10px;
+  }
+  .horizontal-image-list-item {
+    flex: 0 0 auto;
+  }
+  .project-media {
+    margin: 1.5rem 0 2rem;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  }
+  .project-image, .project-video {
+    width: 100%;
+    display: block;
+  }
+  .project-image {
+    max-height: 400px;
+    object-fit: cover;
+  }
+  .project-video {
+    border: none;
+    border-radius: 0;
+    outline: none;
+  }
+  .project-description {
+    font-size: 1.15rem;
+    margin-bottom: 2rem;
+    color: #444;
+  }
+  .tech-stack {
+    margin-bottom: 2rem;
+  }
+  .tech-stack h3 {
+    margin-bottom: 0.8rem;
+    color: #4054b2;
+  }
+  .tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+  }
+  .tech-item {
+    background-color: #6b73ff;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+    box-shadow: 0 6px 14px rgba(107, 115, 255, 0.6);
+    user-select: none;
+    cursor: default;
+    transition: background-color 0.3s ease;
+  }
+  .tech-item:hover {
+    background-color: #4e57d9;
+  }
+  .links {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .links a {
+    background-color: #4054b2;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    font-weight: 700;
+    box-shadow: 0 8px 20px rgba(64, 84, 178, 0.35);
+    transition: background-color 0.3s ease;
+  }
+  .links a:hover {
+    background-color: #2b3475;
+  }
+  @media (max-width: 600px) {
+    .links {
+      flex-direction: column;
+    }
+    .links a {
+      width: 100%;
+      text-align: center;
+    }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Sistem Reservasi Order (Study Case)</h1>
+</header>
+<div class="container" role="main">
+  <a href="index.html" class="back-link" aria-label="Back to Portfolio">← Back to Portfolio</a>
+  <!-- <div class="project-media">
+    <img src="assets/img/project3/file1.png" alt="Screenshot of Project One" class="project-image" />
+    <img src="assets/img/project3/file3.png" alt="Screenshot of Project One" class="project-image" />
+    
+  </div> -->
+  <div class="horizontal-image-list" role="list" aria-label="List of project images">
+    <div class="horizontal-image-list-item" role="listitem" tabindex="0">
+      <img src="assets/img/project1/1.png" alt="Project 1 web version image" />
+    </div>
+    <div class="horizontal-image-list-item" role="listitem" tabindex="0">
+      <img src="assets/img/project1/2.png" alt="Project 1 mobile version image" />
+    </div>
+    <div class="horizontal-image-list-item" role="listitem" tabindex="0">
+      <img src="assets/img/project1/3.png" alt="Project 2 web version image" />
+    </div>
+    <div class="horizontal-image-list-item" role="listitem" tabindex="0">
+      <img src="assets/img/project1/4.png" alt="Project 2 mobile version image" />
+    </div>
+    <div class="horizontal-image-list-item" role="listitem" tabindex="0">
+      <img src="assets/img/project1/5.png" alt="Project 3 web version image" />
+    </div>
+    <div class="horizontal-image-list-item" role="listitem" tabindex="0">
+      <img src="assets/img/project1/6.png" alt="Project 3 mobile version image" />
+    </div>
+  </div>
+  <section class="project-description">
+    <p>
+      Aplikasi Pencarian Lembaga Bantuan Hukum Ini Adalah Study Case yang dibuat menggunakan Framework Laravel untuk Backend dan Flutter untuk Versi Mobile. Aplikasi ini dapat digunakan untuk mencari Lembaga Bantuan Hukum yang terdekat dari lokasi pengguna. Aplikasi ini juga dapat digunakan untuk mencari informasi tentang Lembaga Bantuan Hukum
+    </p>
+  </section>
+  <section class="tech-stack" aria-label="Technologies Used">
+    <h3>Technologies Used</h3>
+    <div class="tech-list">
+      <div class="tech-item">Laravel 10</div>
+      <div class="tech-item">Flutter</div>
+      <div class="tech-item">MySql</div>
+      <div class="tech-item">BootStraps</div>
+      <div class="tech-item">CSS3</div>
+      <div class="tech-item">REST API</div>
+    </div>
+  </section>
+  <section class="links" aria-label="Project Links">
+    <a href="https://github.com/naufalfirman23/mobile-making-order-system-client" target="_blank" rel="noopener noreferrer" aria-label="Source Code of Project One on GitHub">Source Code</a>
+  </section>
+</div>
+</body>
+</html>
+
